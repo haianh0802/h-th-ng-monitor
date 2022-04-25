@@ -5,3 +5,4 @@ Một hệ thống monitoring sẽ giúp chúng ta có một cái nhìn dễ dà
 
 Người dùng luôn là mục tiêu cuối cùng của sản phẩm. Hiểu được những gì thực sự quan trọng đối với người dùng và xây dựng được các công thức tính toán các yếu tố này giúp chúng ta tập trung vào những thứ cần thiết và có được một cái nhìn chính xác về sự hiệu quả của sản phẩm. Từ đó, chúng ta có thể xây dựng một hệ thống monitoring hiệu quả để đảm bảo mục tiêu cụ thể mà chúng ta đề ra.
 
+# Monitoring System ở Got It
