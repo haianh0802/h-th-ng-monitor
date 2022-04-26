@@ -122,3 +122,13 @@ Livecheck hoạt động như thế nào để cải thiện được hiệu nă
 
 ![image](https://user-images.githubusercontent.com/101684058/165264899-e90fd09d-bea8-419e-91ec-7508ec6681c5.png)
 
+![image](https://user-images.githubusercontent.com/101684058/165265879-f27b637a-09e3-4af7-892d-ce42b098ca56.png)
+
+![image](https://user-images.githubusercontent.com/101684058/165266248-c958532d-7c95-421f-a8fb-7df504b42938.png)
+
+![image](https://user-images.githubusercontent.com/101684058/165266589-20d12f22-b238-4ac0-b9f1-c20b3a0c18f0.png)
+
+![image](https://user-images.githubusercontent.com/101684058/165267567-282ff290-4d36-4adc-8a54-3bb41c67f119.png)
+
+
+
