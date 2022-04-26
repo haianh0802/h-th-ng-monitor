@@ -43,15 +43,51 @@ Với tính năng được tích hợp với nhiều sản phẩm thì check_mk 
 
 ### 5. Các khái niệm trong check_mk
 ##### Livestatus
-Là một phần quan trọng trong check_mk. Nó giúp cho check_mk truy xuất dữ liệu một cách nhanh chóng
-Livestatus sẽ sử dụng socket để lấy dữ liệu để trả lời truy vấn dó đó tốc độ truy vấn của nó không còn phụ thuộc vào tốc độ I/O như là lưu dữ liệu trong file
-Khi truy xuất dữ liệu bằng command line thì livestatus sẽ phân biệt chữ hoa và chữ thường
-Livestatus sẽ sử dụng socket để check dữ liệu do đó công việc được phân đều cho các CPU
+- Là một phần quan trọng trong check_mk. Nó giúp cho check_mk truy xuất dữ liệu một cách nhanh chóng
+- Livestatus sẽ sử dụng socket để lấy dữ liệu để trả lời truy vấn dó đó tốc độ truy vấn của nó không còn phụ thuộc vào tốc độ I/O như là lưu dữ liệu trong file
+- Khi truy xuất dữ liệu bằng command line thì livestatus sẽ phân biệt chữ hoa và chữ thường
+- Livestatus sẽ sử dụng socket để check dữ liệu do đó công việc được phân đều cho các CPU
 ##### Multisite – Giao diện web
-Multisite là một giao diện web được check_mk áp dụng để thay thế cho nagios web.
-Nó được sử dụng để xem thông tin và kiểm soát hệ thống giám sát.
-Kết hợp WATO để có thể hỗ trợ việc cấu hình bằng website
-WATO là tập hợp nhiều modules được sử dụng để cấu hình cho check_mk server
-Mỗi khi có thay đổi cần chọn cập nhật thay đổi
-Có sẵn các agent giám sát được lưu trữ và hiển thị sẵn trên web
-Nó có phiên bản tối ưu hóa cho điện thoại
+- Multisite là một giao diện web được check_mk áp dụng để thay thế cho nagios web.
+- Nó được sử dụng để xem thông tin và kiểm soát hệ thống giám sát.
+- Kết hợp WATO để có thể hỗ trợ việc cấu hình bằng website
+- WATO là tập hợp nhiều modules được sử dụng để cấu hình cho check_mk server
+- Mỗi khi có thay đổi cần chọn cập nhật thay đổi
+- Có sẵn các agent giám sát được lưu trữ và hiển thị sẵn trên web
+- Nó có phiên bản tối ưu hóa cho điện thoại
+
+![image](https://user-images.githubusercontent.com/101684058/165203160-9ae8dd15-0bc9-4ca2-adfb-2d140f54daf1.png)
+
+##### EVENT CONSOLE
+- Ngoài việc giám sát theo khoảng thời gian check bình thường còn có một loại giám sát theo sự kiện
+- Event console là hệ thống tích hợp theo dõi sự kiên từ các nguồn như syslog; SNMP traps; Windows event logs …
+- Những sự kiện xảy ra không được xử lý bằng lõi của check_mk mà được xử lý bằng một dịch vụ riêng biệt
+##### Round Robin Database(RRD)
+- Đây là dạng DB mặc định mà check_mk dùng để lưu trữ thông tin
+- Thông tin của DB được lưu trữ dưới dạng bảng và cột để lưu trữ dữ liệu
+- Có thể hợp nhất được dữ liệu của một khoảng thời gian lại vào làm một
+- Có thể truy vấn được dữ liệu trong RRD bằng live status language
+- Lưu ý ngôn ngữ truy vấn này phân biệt chữ hoa và chữ thường
+- Có thể sử dụng các headers để lọc thông tin hiển thị từ các truy vấn được sử dụng
+- Khi muốn truy vấn thống kê thì có các giá trị và các toán tử được định nghĩa sẵn để sử dụng
+- Khi dữ liệu được lưu đầy thì nó sẽ ghi đè lên dữ liệu cũ
+
+![image](https://user-images.githubusercontent.com/101684058/165203266-fa63462f-9a3e-4897-9084-c42b6f016d89.png)
+
+##### Site
+- Để có thể thực hiện việc giám sát thì cần tạo ra một site để có thể sử dụng
+- Một server có thể tạo ra được nhiều site
+- Để đăng nhập được vào site thì cần có user để đăng nhập và user được phân thành 3 loại user: Administrator; Guest; Normal monitoring
+- Có 2 user mặc định có quyền Administrator là omdadmin và cmkadmin
+- Site là cách gọi của sản phẩm được tạo ra từ Multisite
+
+### 6. Cấu trúc của check_mk
+
+![image](https://user-images.githubusercontent.com/101684058/165203352-30567db7-bbdb-4fd8-8d62-b1115f3f83a2.png)
+
+- Các lõi sẽ gọi xuống check_mk để thực hiện chức năng kiểm tra của nó
+- sau khi check thì livestatus sẽ hiển thị thông tin của mk lên website
+- PNP4nagios: được sử dụng để xử lý dữ liệu để chuyển sang dạng biểu đồ
+- Nagvis : được sử dụng để vẽ lại mô hình giám sát giúp người dùng có thể nhìn một cách dễ dàng hiểu hơn
+- Dữ liệu sẽ được lưu vào trong RRD
+
