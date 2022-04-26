@@ -111,3 +111,12 @@ Livecheck hoạt động như thế nào để cải thiện được hiệu nă
 - Các tiến trình fork được phân tán trên tất cả các CPU thay vì chỉ một như trước.
 - Process VM size tổng chỉ khoảng 100KB.
 
+# Cài đặt Check_mk trên Centos7
+
+![image](https://user-images.githubusercontent.com/101684058/165210378-34326235-6040-4f9d-a703-1d87b410abfe.png)
+
+![image](https://user-images.githubusercontent.com/101684058/165210447-371fe18c-6c02-4877-b820-4481e6c888da.png)
+
+![image](https://user-images.githubusercontent.com/101684058/165210567-1bd77d73-0cd8-40cd-a022-f0b2bbea05d4.png)
+
+
