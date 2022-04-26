@@ -112,10 +112,18 @@ Livecheck hoạt động như thế nào để cải thiện được hiệu nă
 - Process VM size tổng chỉ khoảng 100KB.
 
 # Cài đặt Check_mk trên Centos7
+Cài đặt gói wget
+
+`yum install wget -y `
 
 ![image](https://user-images.githubusercontent.com/101684058/165239319-61afd61e-38df-401e-bde0-64a14586fbd1.png)
 
+Khai báo repo
+
+`yum install epel-release -y`
+
 ![image](https://user-images.githubusercontent.com/101684058/165239635-253c4399-ab1f-427d-a391-363ddef0b143.png)
+
 
 ![image](https://user-images.githubusercontent.com/101684058/165210567-1bd77d73-0cd8-40cd-a022-f0b2bbea05d4.png)
 
