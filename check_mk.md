@@ -113,10 +113,12 @@ Livecheck hoạt động như thế nào để cải thiện được hiệu nă
 
 # Cài đặt Check_mk trên Centos7
 
-![image](https://user-images.githubusercontent.com/101684058/165210378-34326235-6040-4f9d-a703-1d87b410abfe.png)
+![image](https://user-images.githubusercontent.com/101684058/165239319-61afd61e-38df-401e-bde0-64a14586fbd1.png)
 
-![image](https://user-images.githubusercontent.com/101684058/165210447-371fe18c-6c02-4877-b820-4481e6c888da.png)
+![image](https://user-images.githubusercontent.com/101684058/165239635-253c4399-ab1f-427d-a391-363ddef0b143.png)
 
 ![image](https://user-images.githubusercontent.com/101684058/165210567-1bd77d73-0cd8-40cd-a022-f0b2bbea05d4.png)
 
+
+![image](https://user-images.githubusercontent.com/101684058/165264899-e90fd09d-bea8-419e-91ec-7508ec6681c5.png)
 
