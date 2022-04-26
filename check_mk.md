@@ -124,19 +124,42 @@ Khai báo repo
 
 ![image](https://user-images.githubusercontent.com/101684058/165239635-253c4399-ab1f-427d-a391-363ddef0b143.png)
 
+Vào Centos7 click vào https://checkmk.com/de/download?edition=cfe&version=stable&dist=redhat để tải check_mk 
 
-![image](https://user-images.githubusercontent.com/101684058/165210567-1bd77d73-0cd8-40cd-a022-f0b2bbea05d4.png)
-
+Cài đặt check_mk bằng link vừa download.
+`yum install check-mk-free-2.0.0p23-el7-38.x86_64.rpm`
 
 ![image](https://user-images.githubusercontent.com/101684058/165264899-e90fd09d-bea8-419e-91ec-7508ec6681c5.png)
 
+Mở port 80 để sử dụng dịch vụ httpd
+
+`firewall-cmd --permanent --add-port=80/tcp`
+
+`firewall-cmd --reload`
+
 ![image](https://user-images.githubusercontent.com/101684058/165265879-f27b637a-09e3-4af7-892d-ce42b098ca56.png)
+
+Tắt selinux
+`setenforce 0`
 
 ![image](https://user-images.githubusercontent.com/101684058/165266248-c958532d-7c95-421f-a8fb-7df504b42938.png)
 
+Tạo và khởi động site
+
+`omd create monitoring`
+
+`omd start monitoring`
+
 ![image](https://user-images.githubusercontent.com/101684058/165266589-20d12f22-b238-4ac0-b9f1-c20b3a0c18f0.png)
 
+Đặt mật khẩu cho site
+`su - monitoring`
+
+`htpasswd -m ~/etc/htpasswd omdadmin`
+
 ![image](https://user-images.githubusercontent.com/101684058/165268514-fd75906c-e2e6-41d6-9554-b5caff89e857.png)
+
+Đăng nhập vào trang web bằng tài khoản admin
 
 ![image](https://user-images.githubusercontent.com/101684058/165267567-282ff290-4d36-4adc-8a54-3bb41c67f119.png)
 
