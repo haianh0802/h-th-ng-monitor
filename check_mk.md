@@ -161,6 +161,8 @@ Tạo và khởi động site
 
 Đăng nhập vào trang web bằng tài khoản admin
 
+`http://ip_address/monitoring/check_mk`
+
 ![image](https://user-images.githubusercontent.com/101684058/165267567-282ff290-4d36-4adc-8a54-3bb41c67f119.png)
 
 ![image](https://user-images.githubusercontent.com/101684058/165268588-45adc59e-6c2b-4f9d-9d0d-338e78068ad5.png)
