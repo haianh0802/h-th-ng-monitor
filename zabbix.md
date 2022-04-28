@@ -88,8 +88,8 @@ Cung cấp các mẫu out of the box, cho phép bạn tạo mẫu, sử dụng h
 #### Auto - Discovery
 Được biết đến là một chức năng tự động thêm các thao tác cơ bản như thay đổi / thêm/ xóa. Với các chức năng phân cấp:
 
-Network discovery: quét các thông số trên internet như trạng thái IP, thời gian hoạt động hoặc không hoạt động,... một cách định kỳ theo lập trình của người sử dụng.
+- Network discovery: quét các thông số trên internet như trạng thái IP, thời gian hoạt động hoặc không hoạt động,... một cách định kỳ theo lập trình của người sử dụng.
 
-Low-level discovery: tự động tạo mục, trường và biểu đồ cho các phần khác nhau trên hệ thống. 
+- Low-level discovery: tự động tạo mục, trường và biểu đồ cho các phần khác nhau trên hệ thống. 
 
-Auto-registration of the active agents: thực hiện chức năng ghi nhận và theo dõi các agent đang hoạt động trên phương thức tự động. 
+- Auto-registration of the active agents: thực hiện chức năng ghi nhận và theo dõi các agent đang hoạt động trên phương thức tự động. 
