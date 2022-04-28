@@ -160,33 +160,6 @@ Tạo và khởi động site
 ![image](https://user-images.githubusercontent.com/101684058/165268514-fd75906c-e2e6-41d6-9554-b5caff89e857.png)
 
 
-![image](https://user-images.githubusercontent.com/101684058/165673109-427bcf2b-d37c-45e8-b7e0-4a260db89001.png)
-
-![image](https://user-images.githubusercontent.com/101684058/165673459-0e11d959-a618-426c-b68d-59837123834d.png)
-
-wget http://192.168.154.135/monitoring/check_mk/agents/check-mk-agent-2.0.0p23-1.noarch.rpm
-
-![image](https://user-images.githubusercontent.com/101684058/165673861-91a5cd9d-30f5-4057-a8da-8bb8bbe33ad7.png)
-
-![image](https://user-images.githubusercontent.com/101684058/165674054-f7598b65-03fc-481e-8733-6d5f4f8652ce.png)
-
-![image](https://user-images.githubusercontent.com/101684058/165674134-93c4318c-1d69-4652-ab24-ff41faac04e1.png)
-
-![image](https://user-images.githubusercontent.com/101684058/165674221-729b8ff7-05d8-4067-898f-c64dfafd521a.png)
-
-![image](https://user-images.githubusercontent.com/101684058/165674284-b6e687da-bf8a-48bf-9488-ec4d5ad547f9.png)
-
-![image](https://user-images.githubusercontent.com/101684058/165674334-cfa8d47a-e5ba-4f8f-b4fb-50fb0ff3650e.png)
-
-![image](https://user-images.githubusercontent.com/101684058/165675123-db20c305-a4e0-4664-88ee-53c3fe05cb9a.png)
-
-![image](https://user-images.githubusercontent.com/101684058/165675210-0536dc40-5620-4243-bb96-0001f38939bb.png)
-
-![image](https://user-images.githubusercontent.com/101684058/165675257-22b5a688-9978-4791-9658-19b23339295a.png)
-
-![image](https://user-images.githubusercontent.com/101684058/165675327-ff3f2d06-0568-4629-a2e6-9f8a88a44a9b.png)
-
-
 Đăng nhập vào trang web bằng tài khoản admin
 
 `http://ip_address/monitoring/check_mk`
@@ -194,6 +167,81 @@ wget http://192.168.154.135/monitoring/check_mk/agents/check-mk-agent-2.0.0p23-1
 ![image](https://user-images.githubusercontent.com/101684058/165267567-282ff290-4d36-4adc-8a54-3bb41c67f119.png)
 
 ![image](https://user-images.githubusercontent.com/101684058/165268588-45adc59e-6c2b-4f9d-9d0d-338e78068ad5.png)
+
+## Các bước thực hiện với client centos 7
+
+ Tìm agent phù hợp
+ 
+ Trên các website của check_mk server khi bạn cài đặt và đăng nhập vào nó sẽ hỗ trợ và hiển thị cho bạn các agent 3 loại agent. Việc của bạn là chọn agent phù hợp với hệ điều hành của mình. Ở đây tôi cài đặt agent trên centos 7 nên tôi sẽ chọn agent có đuôi là .rpm để tiến hành cài đặt
+ 
+
+![image](https://user-images.githubusercontent.com/101684058/165673109-427bcf2b-d37c-45e8-b7e0-4a260db89001.png)
+
+ Cài đặt gói wget
+
+`yum install wget -y `
+
+![image](https://user-images.githubusercontent.com/101684058/165673459-0e11d959-a618-426c-b68d-59837123834d.png)
+
+`wget http://192.168.154.135/monitoring/check_mk/agents/check-mk-agent-2.0.0p23-1.noarch.rpm`
+
+![image](https://user-images.githubusercontent.com/101684058/165673861-91a5cd9d-30f5-4057-a8da-8bb8bbe33ad7.png)
+
+Cấp quyền thực thi cho file vừa download về
+
+`chmod +x check-mk-agent-2.0.0p23-1.noarch.rpm`
+
+![image](https://user-images.githubusercontent.com/101684058/165674054-f7598b65-03fc-481e-8733-6d5f4f8652ce.png)
+
+Cài đặt agent
+
+`rpm -ivh check-mk-agent-2.0.0p23-1.noarch.rpm`
+
+![image](https://user-images.githubusercontent.com/101684058/165674134-93c4318c-1d69-4652-ab24-ff41faac04e1.png)
+
+Cài đặt xinetd
+
+`yum install xinetd -y`
+
+![image](https://user-images.githubusercontent.com/101684058/165674221-729b8ff7-05d8-4067-898f-c64dfafd521a.png)
+
+Khởi động xinetd
+
+`systemctl start xinetd`
+`systemctl enable xinetd`
+
+![image](https://user-images.githubusercontent.com/101684058/165674284-b6e687da-bf8a-48bf-9488-ec4d5ad547f9.png)
+
+Cài đặt gói net-tools để kiểm tra dễ dàng hơn
+
+`yum install net-tools -y`
+
+![image](https://user-images.githubusercontent.com/101684058/165674334-cfa8d47a-e5ba-4f8f-b4fb-50fb0ff3650e.png)
+
+ Mở port trên client để có thể giao tiếp với check_mk server
+
+`vi /etc/xinetd.d/check_mk`
+
+![image](https://user-images.githubusercontent.com/101684058/165675123-db20c305-a4e0-4664-88ee-53c3fe05cb9a.png)
+
+Kiểm tra port mặc định của check_mk sử dụng để giám sát được chưa
+
+![image](https://user-images.githubusercontent.com/101684058/165675210-0536dc40-5620-4243-bb96-0001f38939bb.png)
+
+Mở port trên firewall
+
+ `firewall-cmd --add-port=6556/tcp --permanent`
+ `firewall-cmd --reload`
+
+![image](https://user-images.githubusercontent.com/101684058/165675257-22b5a688-9978-4791-9658-19b23339295a.png)
+
+Tắt selinux
+
+`setenforce 0`
+
+![image](https://user-images.githubusercontent.com/101684058/165675327-ff3f2d06-0568-4629-a2e6-9f8a88a44a9b.png)
+
+
 
 
 
