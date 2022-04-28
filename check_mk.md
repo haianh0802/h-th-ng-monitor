@@ -159,6 +159,34 @@ Tạo và khởi động site
 
 ![image](https://user-images.githubusercontent.com/101684058/165268514-fd75906c-e2e6-41d6-9554-b5caff89e857.png)
 
+
+![image](https://user-images.githubusercontent.com/101684058/165673109-427bcf2b-d37c-45e8-b7e0-4a260db89001.png)
+
+![image](https://user-images.githubusercontent.com/101684058/165673459-0e11d959-a618-426c-b68d-59837123834d.png)
+
+wget http://192.168.154.135/monitoring/check_mk/agents/check-mk-agent-2.0.0p23-1.noarch.rpm
+
+![image](https://user-images.githubusercontent.com/101684058/165673861-91a5cd9d-30f5-4057-a8da-8bb8bbe33ad7.png)
+
+![image](https://user-images.githubusercontent.com/101684058/165674054-f7598b65-03fc-481e-8733-6d5f4f8652ce.png)
+
+![image](https://user-images.githubusercontent.com/101684058/165674134-93c4318c-1d69-4652-ab24-ff41faac04e1.png)
+
+![image](https://user-images.githubusercontent.com/101684058/165674221-729b8ff7-05d8-4067-898f-c64dfafd521a.png)
+
+![image](https://user-images.githubusercontent.com/101684058/165674284-b6e687da-bf8a-48bf-9488-ec4d5ad547f9.png)
+
+![image](https://user-images.githubusercontent.com/101684058/165674334-cfa8d47a-e5ba-4f8f-b4fb-50fb0ff3650e.png)
+
+![image](https://user-images.githubusercontent.com/101684058/165675123-db20c305-a4e0-4664-88ee-53c3fe05cb9a.png)
+
+![image](https://user-images.githubusercontent.com/101684058/165675210-0536dc40-5620-4243-bb96-0001f38939bb.png)
+
+![image](https://user-images.githubusercontent.com/101684058/165675257-22b5a688-9978-4791-9658-19b23339295a.png)
+
+![image](https://user-images.githubusercontent.com/101684058/165675327-ff3f2d06-0568-4629-a2e6-9f8a88a44a9b.png)
+
+
 Đăng nhập vào trang web bằng tài khoản admin
 
 `http://ip_address/monitoring/check_mk`
