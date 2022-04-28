@@ -241,7 +241,38 @@ Tắt selinux
 
 ![image](https://user-images.githubusercontent.com/101684058/165675327-ff3f2d06-0568-4629-a2e6-9f8a88a44a9b.png)
 
+## Một số thao tác cơ bản
+#### Đổi mật khẩu
+Chọn User ->  Change Password
+![image](https://user-images.githubusercontent.com/101684058/165701245-eac384ef-1793-4c6b-bf9b-1bbb16e38280.png)
 
+Điền mật khẩu cũ và mật khẩu mới vào rồi chọn Save
 
+![image](https://user-images.githubusercontent.com/101684058/165701647-4601bb91-2393-454a-858a-f26122c22cd2.png)
+
+#### Thêm máy chủ vào hệ thống giám sát
+
+![image](https://user-images.githubusercontent.com/101684058/165703217-b8133bba-163b-47ee-9a8d-40bb66d1c552.png)
+
+![image](https://user-images.githubusercontent.com/101684058/165703293-4c5ffe6a-5300-4b5e-98f1-e54569baa73f.png)
+
+Điền hostname và ip address và chọn save
+
+![image](https://user-images.githubusercontent.com/101684058/165703474-da8a2da1-f943-4abb-b8fe-e8a78dbafbcf.png)
+ 
+ Bạn có thể click vào "+" để dám sát dịch vụ hoặc vào "x" để không dám sát dịch vụ. Có thể click fix all để chọn giám sát tất cả
+ 
+![image](https://user-images.githubusercontent.com/101684058/165706450-2bb784cc-1cd3-40be-a0ed-ef6e7774f671.png)
+
+Có những thay đổi không đc áp dụng tự động click vào đây để kích hoạt
+
+![image](https://user-images.githubusercontent.com/101684058/165707701-b2a40221-e8c0-4be0-b3a2-b647178bf7af.png)
+
+Bây giờ các thay đổi đã được kích hoatl
+
+![image](https://user-images.githubusercontent.com/101684058/165707951-115ea8c7-4717-42b6-a034-59d7d27e2080.png)
+
+Tổng quan về tất cả các dịch vụ 
+![image](https://user-images.githubusercontent.com/101684058/165708882-c9411414-d9ea-4f57-8644-732ec74812ca.png)
 
 
