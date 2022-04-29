@@ -123,4 +123,13 @@ Giao diện Zabbix
 
 ![image](https://user-images.githubusercontent.com/101684058/165882558-989fc19a-32d4-4ee2-a873-adf60daefcdb.png)
 
+Thêm host ở phần Zabbix Server
+
+![image](https://user-images.githubusercontent.com/101684058/165912669-6d58999c-689d-4207-b3aa-431bb6ebb7cc.png)
+
+![image](https://user-images.githubusercontent.com/101684058/165913289-9d061b3e-e3fa-4e70-a5ac-e8fb7697b2d8.png)
+
+![image](https://user-images.githubusercontent.com/101684058/165913564-ee2ba849-4a4d-42a0-8a47-576ab29e61a8.png)
+
+
 
