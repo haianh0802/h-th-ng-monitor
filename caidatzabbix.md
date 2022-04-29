@@ -105,6 +105,22 @@ Nhập thông tin database -> Next step
 
 ![image](https://user-images.githubusercontent.com/101684058/165877104-447d6162-6437-4eb5-a1c4-82fac05b2828.png)
 
+Đặt tên Zabbiz Server -> Next step
 
+![image](https://user-images.githubusercontent.com/101684058/165881029-15a1acfb-8765-4cbf-98ac-3573fdf6c5fe.png)
+
+Next step
+
+![image](https://user-images.githubusercontent.com/101684058/165881106-205a6de3-ffb0-409b-8f35-8ce25fd07e93.png)
+
+![image](https://user-images.githubusercontent.com/101684058/165881161-05e5180b-9598-498d-9a48-ed55bdfad533.png)
+
+Sau khi thiết lập xong, bạn đăng nhập vào Zabbix Dashboard bằng tài khoản mặc định Admin / zabbix
+
+![image](https://user-images.githubusercontent.com/101684058/165881219-fbf60c26-8f96-40e6-ad80-e9a1c444a785.png)
+
+Giao diện Zabbix
+
+![image](https://user-images.githubusercontent.com/101684058/165882558-989fc19a-32d4-4ee2-a873-adf60daefcdb.png)
 
 
