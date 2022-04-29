@@ -81,7 +81,7 @@ Mở tập tin zabbix.conf uncomment ; php_value[date.timezone] = Europe/Riga v�
 
 `nano /etc/opt/rh/rh-php72/php-fpm.d/zabbix.conf`
 
-![image](https://user-images.githubusercontent.com/101684058/165722400-fb300736-da73-419e-ae25-ed82381307ac.png)
+![image](https://user-images.githubusercontent.com/101684058/165876737-15e2548e-50cb-4de5-9c9e-02b6450879c6.png)
 
 Khởi động Zabbix server và agent
 `systemctl restart zabbix-server zabbix-agent httpd rh-php72-php-fpm`
@@ -99,6 +99,11 @@ Sau khi hoàn tất các bước trên, bạn tiến hành mở trình duyệt v
 
 ![image](https://user-images.githubusercontent.com/101684058/165723016-1944dfbc-0d23-47b9-8d2b-8f0a31107fb5.png)
 
+![image](https://user-images.githubusercontent.com/101684058/165876944-f5487812-b09f-4a8a-b6fe-fae69775d9da.png)
+
+Nhập thông tin database -> Next step
+
+![image](https://user-images.githubusercontent.com/101684058/165877104-447d6162-6437-4eb5-a1c4-82fac05b2828.png)
 
 
 
